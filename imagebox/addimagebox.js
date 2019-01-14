@@ -21,7 +21,7 @@ window.onload = function() {
 	cssLink.setAttribute("href", filePath+"css");
 	document.head.appendChild(cssLink);
 
-    // create link tag for the css file
+    // create link tag for the script file
 	var jsScript = document.createElement("script");
 	jsScript.setAttribute("src", filePath+"js");
 	document.body.appendChild(jsScript);
