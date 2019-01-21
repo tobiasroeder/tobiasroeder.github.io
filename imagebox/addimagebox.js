@@ -1,5 +1,6 @@
 // ======================================================
-// ImageBox v1.0.1 (addimagebox.js)
+// addImageBox v1.0.1 (addimagebox.js)
+// ImageBox v1.0.0
 //
 // Creative Commons Attribution 4.0 International License
 // https://tobiasroeder.github.io/imagebox/license
