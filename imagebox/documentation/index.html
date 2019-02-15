@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	
+	<title>ImageBox by Tobias Röder</title>
+	
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/pygment_trac.css">
+	
+	<link rel="icon" type="image/png" href="assets/icon/favicon.png">
+	
+	<meta name="viewport" content="width=device-width">
+	
+	<!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	
+</head>
+<body>
+	
+	<div class="wrapper">
+		
+		<header>
+			
+			<h1>ImageBox</h1>
+			
+			<p>Display an image in a responsive imagebox <u>without</u> jQuery.</p>
+			<p class="view"><a href="https://github.com/tobiasroeder/imagebox">View the Project on GitHub <small>tobiasroeder/imagebox</small></a>
+			</p>
+			<ul>
+				<li><a href="https://github.com/tobiasroeder/imagebox/zipball/master">Download <strong>ZIP File</strong></a></li>
+				<li><a href="https://github.com/tobiasroeder/imagebox/tarball/master">Download <strong>TAR Ball</strong></a></li>
+				<li><a href="http://github.com/tobiasroeder/imagebox">Fork On <strong>GitHub</strong></a></li>
+			</ul>
+			
+		</header>
+		
+		
+		<section>
+			
+			<h1>Documentation</h1>
+			
+			<p>ImageBox latest version <a href="https://github.com/tobiasroeder/imagebox/releases">1.0.1</a></p>
+			
+			<hr>
+			
+			<h3>Include this files:</h3>
+			
+			<p>
+				<pre>https://tobiasroeder.github.io/imagebox/{version}/imagebox.min.css
+https://tobiasroeder.github.io/imagebox/{version}/imagebox.min.js</pre>
+				<p><b>OR:</b></p>
+				<pre>https://tobiasroeder.github.io/imagebox/addimagebox.js</pre>
+				<blockquote>
+        			<p>(this file will include the newest version from all files which are needed)</p>
+        		</blockquote>
+			</p>
+		
+			<hr>
+		
+			<h3>How it works:</h3>
+		
+			<p>add to the <code>&lt;img&gt;</code> tag the following attributes:</p>
+		
+			<p>
+				<ul>
+					<li><code>onclick="imagebox('open', this);"</code></li>
+					<li><code>data-imagebox="image"</code></li>
+					<li><code>data-imagebox-src="img_big.jpg"</code> <em>(voluntary, else it use the src attribute)</em></li>
+					<li><code>data-imagebox-description="Lorem ipsum"</code></li>
+				</ul>
+			</p>
+	
+			<hr>
+	
+			<h3>Example:</h3>
+	
+			<p><pre>&lt;img src="img_small.jpg" onclick="imagebox('open', this);" data-imagebox="image" data-imagebox-src="img_big.jpg" data-imagebox-description="Lorem ipsum"&gt;</pre></p>
+	
+			<hr id="example">
+			<h3>Live example:</h3>
+	
+			<p>
+				<p><img src="assets/img/img01-small.jpg" onclick="imagebox('open', this);" data-imagebox="image" data-imagebox-src="assets/img/img01-big.jpg" data-imagebox-description="Deer"></p>
+				<p><img src="assets/img/img02-small.jpg" onclick="imagebox('open', this);" data-imagebox="image" data-imagebox-src="assets/img/img02-big.jpg" data-imagebox-description="San Francisco"></p>
+			</p>
+			
+		</section>
+		
+		
+		<footer>
+			
+			<p>This project is maintained by <a href="https://tobias-roeder.de">Tobias Röder</a></p>
+			<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+			
+		</footer>
+	
+	</div>
+
+	<script src="https://tobiasroeder.github.io/imagebox/addimagebox.js"></script>
+	<script src="javascripts/scale.fix.js"></script>
+
+</body>
+</html>
