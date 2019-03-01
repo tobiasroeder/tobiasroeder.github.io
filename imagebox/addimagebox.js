@@ -1,5 +1,5 @@
 // ======================================================
-// ImageBox v1.0.2
+// ImageBox v1.0.3
 // addImageBox v1.0.1
 //
 // Creative Commons Attribution 4.0 International License
@@ -12,7 +12,7 @@
 
 // this file embed always the newest version from the imagebox, the css and the js file
 window.onload = function() {
-    var ibVersion = "1.0.2";
+    var ibVersion = "1.0.3";
     var filePath = "https://tobiasroeder.github.io/imagebox/"+ibVersion+"/imagebox.min.";
 
     // create link tag for the css file
