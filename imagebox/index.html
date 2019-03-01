@@ -43,7 +43,7 @@
 			
 			<h1>Documentation</h1>
 			
-			<p>ImageBox latest version <a href="https://github.com/tobiasroeder/imagebox/releases">1.0.2</a></p>
+			<p>ImageBox latest version <a href="https://github.com/tobiasroeder/imagebox/releases">1.0.3</a></p>
 			
 			<hr>
 			
@@ -67,25 +67,31 @@
 		
 			<p>
 				<ul>
-					<li><code>onclick="imagebox('open', this);"</code></li>
-					<li><code>data-imagebox="image"</code></li>
+					<li><code>onclick="imagebox(this)"</code></li>
+					<li><code>data-imagebox</code></li>
 					<li><code>data-imagebox-src="img_big.jpg"</code> <em>(voluntary, else it use the src attribute)</em></li>
 					<li><code>data-imagebox-description="Lorem ipsum"</code></li>
 				</ul>
+			</p>
+	
+			<h3>Small feature for the description:</h3>
+			
+			<p>
+				<code>data-imagebox-description="{loc} Lorem ipsum"</code> <blockquote>the {loc} will display an small location icon in the beginning</blockquote>
 			</p>
 	
 			<hr>
 	
 			<h3>Example:</h3>
 	
-			<p><pre>&lt;img src="img_small.jpg" onclick="imagebox('open', this);" data-imagebox="image" data-imagebox-src="img_big.jpg" data-imagebox-description="Lorem ipsum"&gt;</pre></p>
+			<p><pre>&lt;img src="img_small.jpg" onclick="imagebox(this)" data-imagebox data-imagebox-src="img_big.jpg" data-imagebox-description="Lorem ipsum"&gt;</pre></p>
 	
 			<hr id="example">
 			<h3>Live example:</h3>
 	
 			<p>
-				<p><img src="assets/img/img01-small.jpg" onclick="imagebox('open', this);" data-imagebox="image" data-imagebox-src="assets/img/img01-big.jpg" data-imagebox-description="Deer"></p>
-				<p><img src="assets/img/img02-small.jpg" onclick="imagebox('open', this);" data-imagebox="image" data-imagebox-src="assets/img/img02-big.jpg" data-imagebox-description="San Francisco"></p>
+				<p><img src="assets/img/img01-small.jpg" onclick="imagebox(this)" data-imagebox data-imagebox-src="assets/img/img01-big.jpg" data-imagebox-description="Deer"></p>
+				<p><img src="assets/img/img02-small.jpg" onclick="imagebox(this)" data-imagebox data-imagebox-src="assets/img/img02-big.jpg" data-imagebox-description="{loc} San Francisco"></p>
 			</p>
 			
 		</section>
