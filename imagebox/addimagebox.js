@@ -1,18 +1,18 @@
 // ======================================================
-// ImageBox v1.0.3
+// ImageBox v1.0.4
 // addImageBox v1.0.1
 //
 // Creative Commons Attribution 4.0 International License
 // https://tobiasroeder.github.io/imagebox/license
 //
 // https://github.com/tobiasroeder/imagebox
-// Copyright 2018 ImageBox
+// Copyright 2019 ImageBox
 //
 // ======================================================
 
 // this file embed always the newest version from the imagebox, the css and the js file
 window.onload = function() {
-    var ibVersion = "1.0.3";
+    var ibVersion = "1.0.4";
     var filePath = "https://tobiasroeder.github.io/imagebox/"+ibVersion+"/imagebox.min.";
 
     // create link tag for the css file
