@@ -103,6 +103,10 @@ img {
   max-width:100%;
 }
 
+img[data-imagebox] {
+  width: 500px;
+}
+
 header {
   width:270px;
   float:left;
