@@ -17,7 +17,7 @@ window.onload = function() {
 		addimageboxVersion = document.querySelectorAll('script[data-addimagebox-version]')[0];
 	
 	if (addimageboxVersion) {
-		ibVersion = addimageboxVersion.getAttribute('data-addimagebox-version';
+		ibVersion = addimageboxVersion.getAttribute('data-addimagebox-version');
 	} else {
 		ibVersion = '1.1.0';
 	}
