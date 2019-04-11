@@ -14,10 +14,10 @@
 window.onload = function() {
 	
 	var ibVersion,
-		addimageboxVersion = document.querySelectorAll('script[data-addimagebox-version]')[0].getAttribute('data-addimagebox-version');
+		addimageboxVersion = document.querySelectorAll('script[data-addimagebox-version]')[0]);
 	
 	if (addimageboxVersion) {
-		ibVersion = addimageboxVersion;
+		ibVersion = addimageboxVersion.getAttribute('data-addimagebox-version';
 	} else {
 		ibVersion = '1.1.0';
 	}
