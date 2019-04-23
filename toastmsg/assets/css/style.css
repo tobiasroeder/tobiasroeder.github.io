@@ -590,8 +590,8 @@ button:hover {
 .page-header {
 	color: #fff;
 	text-align: center;
-	background-color: #159957;
-	background-image: linear-gradient(120deg, #155799, #159957)
+	background-color: #39c;
+	background-image: linear-gradient(120deg, #069, #39c)
 }
 
 @media screen and (min-width: 64em) {
@@ -717,7 +717,7 @@ button:hover {
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	font-weight: normal;
-	color: #159957
+	color: #39c
 }
 
 .main-content p {
