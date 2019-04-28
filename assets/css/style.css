@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Damion|Josefin+Sans:400,700');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: #24292e;
+	background-color: #fcfcfc;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+	color: #39c;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: ease-in-out 0.2s;
+}
+
+a:hover {
+	border-color: #39c;
+}
+
+h1 {
+	font-size: 7em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+button {
+	font-size: 1.2em;
+}
+
+p {
+	font-size: 1.1em;
+}
+
+#page {
+	margin: 20px auto;
+	padding: 0 20px;
+	max-width: 900px;
+}
+
+#header {
+	text-align: center;
+	font-family: 'Damion', cursive;
+	padding-bottom: 20px;
+}
+
+main .project {
+	display: flex;
+	box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+	transition: ease-in-out 0.2s;
+	background-color: #f2f2f2;
+	margin-bottom: 30px;
+}
+
+main .project:hover {
+	box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+}
+
+main .thumbnail {
+	width: 50%;
+	height: 25%;
+	text-align: center;
+	overflow: hidden;
+}
+
+main .thumbnail img {
+	width: 100%;
+	object-fit: contain;
+	margin-bottom: -4px;
+}
+
+main .content {
+	width: 50%;
+	padding: 20px;
+}
+
+main .content p {
+	padding: 15px 0 25px;
+}
+
+main .content button {
+	border: 2px solid #24292e;
+	background-color: #fff;
+	padding: 7px 15px 5px;
+	transition: ease-in-out 0.2s;
+	font-family: 'Josefin Sans', sans-serif;
+	outline: 0;
+}
+
+main .content button:hover {
+	color: #fff;
+	background-color: #24292e;
+}
+
+footer {
+	padding: 20px 5px 10px;
+	text-align: center;
+}
+
+footer img {
+	padding-top: 20px;
+	max-width: 40%;
+}
+
+footer img:hover {
+	opacity: 0.9;
+}
+
+
+@media (max-width: 750px) {
+	
+	main .project {
+		display: block;
+	}
+	
+	main .thumbnail,
+	main .content {
+		width: 100%;
+	}
+	
+	main .content {
+		padding: 25px 20px;
+	}
+	
+}
+
+
+@media (max-width: 576px) {
+	
+	h1 {
+		font-size: 5em;
+	}
+	
+}
+
+@media (max-width: 378px) {
+	h1 {
+		font-size: 4em;
+	}
+}
