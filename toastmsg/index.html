@@ -18,6 +18,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 	
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/prism.css">
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
@@ -43,13 +44,13 @@
 		
 		<h1>Documentation</h1>
 		
-		<p>ToastMsg latest version <a href="https://github.com/tobiasroeder/toastmsg/releases/tag/1.0.0">1.0.0</a></p>
+		<p>ToastMsg latest version <a href="https://github.com/tobiasroeder/toastmsg/releases/tag/1.1.0">1.0.0</a></p>
 		
 		<hr>
 		
 		<h3>Include this file</h3>
 		
-		<pre>&lt;script src="https://unpkg.com/toastmsg-js@1.0.0/toastmsg.min.js"&gt;&lt;/script&gt;</pre>
+		<pre><code class="language-html">&lt;script src="https://cdn.jsdelivr.net/gh/tobiasroeder/toastmsg@1.0.0/js/toastmsg.min.js"&gt;&lt;/script&gt;</code></pre>
 		
 		<hr id="example">
 		
@@ -57,7 +58,7 @@
 		
 		<p>
 		
-			<pre>toastMsg({
+			<pre><code class="language-javascript">toastMsg({
 	color: 'white',
 	bgColor: '#3DB6DF',
 	fontSize: '20px',
@@ -65,7 +66,7 @@
 	value: 'Hello World',
 	position: 'right',
 	duration: 2000
-});</pre>
+});</code></pre>
 		
 			<button onclick="openToastMsg()">Try Out</button>
 		
@@ -73,30 +74,44 @@
 	
 		<hr>
 	
-		<h3>Default settings</h3>
+		<h3>Parameter</h3>
 	
 		<p>
 			<table>
 				<tr>
-					<th>type</th><th>value</th>
+					<th>Parameter</th>
+					<th>Type</th>
+					<th>Default</th>
 				</tr>
 				<tr>
-					<td>color</td><td>#ffffff</td>
+					<td>color</td>
+					<td>string</td>
+					<td>#fff</td>
 				</tr>
 				<tr>
-					<td>bgColor</td><td>#242424</td>
+					<td>bgColor</td>
+					<td>string</td>
+					<td>#242424</td>
 				</tr>
 				<tr>
-					<td>fontSize</td><td>16px</td>
+					<td>fontSize</td>
+					<td>string</td>
+					<td>16px</td>
 				</tr>
 				<tr>
-					<td>fontFamily</td><td>'Helvetica Neue', 'Helvetica', sans-serif</td>
+					<td>fontFamily</td>
+					<td>string</td>
+					<td>'Helvetica Neue', 'Helvetica', sans-serif</td>
 				</tr>
 				<tr>
-					<td>position</td><td>left</td>
+					<td>position</td>
+					<td>string</td>
+					<td>left</td>
 				</tr>
 				<tr>
-					<td>duration</td><td>3000</td>
+					<td>duration</td>
+					<td>number</td>
+					<td>3000</td>
 				</tr>
 			</table>
 
@@ -117,7 +132,8 @@
 	</main>
 
 
-	<script src="https://unpkg.com/toastmsg-js"></script>
+	<script src="../assets/js/prism.js"></script>
+	<script src="https://code.tobias-roeder.de/toastmsg/1.0.0/toastmsg.min.js"></script>
 	<script type="text/javascript">
 		function openToastMsg() {
 			toastMsg({
