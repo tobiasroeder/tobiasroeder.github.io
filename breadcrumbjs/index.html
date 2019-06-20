@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+
+	<title>Breadcrumb.js by Tobias Röder</title>
+	<meta property="og:title" content="Breadcrumb.js">
+	<meta property="og:locale" content="en">
+	<meta name="description" content="All URI paths are automatically displayed in an element.">
+	<meta property="og:description" content="All URI paths are automatically displayed in an element.">
+	<link rel="canonical" href="https://tobiasroeder.github.io/breadcrumbjs">
+	<meta property="og:url" content="https://tobiasroeder.github.io/breadcrumbjs">
+	<meta property="og:site_name" content="Breadcrumb.js">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/prism.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+	<link rel="manifest" href="assets/icons/site.webmanifest">
+	<link rel="mask-icon" href="assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="assets/icons/favicon.ico">
+	
+</head>
+<body>
+
+    <header class="page-header" role="banner">
+		
+		<h1 class="project-name">Breadcrumb.js</h1>
+		<h2 class="project-tagline">All URI paths are automatically displayed in an element.</h2>
+      
+		<a href="https://github.com/tobiasroeder/Breadcrumb.js" class="btn">View on GitHub</a>
+		<a href="https://github.com/tobiasroeder/Breadcrumb.js/zipball/master" class="btn">Download .zip</a>
+		<a href="https://github.com/tobiasroeder/Breadcrumb.js/tarball/master" class="btn">Download .tar.gz</a>
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+		
+		<h1>Documentation</h1>
+		
+		<p>Breadcrumb.js latest version <a href="https://github.com/tobiasroeder/Breadcrumb.js/releases/tag/1.0.0">1.0.0</a></p>
+		
+		<hr>
+		
+		<h3>Include this file</h3>
+		
+		<pre><code class="language-html">&lt;script src="https://cdn.jsdelivr.net/gh/tobiasroeder/breadcrumb.js@1.0.0/js/breadcrumb.min.js"&gt;&lt;/script&gt;</code></pre>
+		
+		<hr id="example">
+		
+		<h3>Syntax (Example)</h3>
+		
+		<p>
+		
+			<pre><code class="language-html">&lt;div class="breadcrumb-path" data-breadcrumb&gt;&lt;/div&gt;</code></pre>
+			<pre><code class="language-javascript">breadcrumb({
+	element: '.breadcrumb-path',
+	home: '&#x1F3E0;',
+	firstLetter: true,
+	hyphen: true,
+	hyphenElement: ' - ',
+	info: false
+});</code></pre>
+		
+		</p>
+	
+		<hr>
+	
+		<h3>Parameter</h3>
+	
+		<p>
+			<table>
+				<tr>
+					<th>Parameter</th>
+					<th>Type</th>
+					<th>Default</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>element</td>
+					<td>string</td>
+					<td></td>
+					<td>Set the element where the breadcrumb has to be written.</td>
+				</tr>
+				<tr>
+					<td>home</td>
+					<td>string</td>
+					<td>'Home'</td>
+					<td>Replace the default 'Home' value.</td>
+				</tr>
+				<tr>
+					<td>firstLetter</td>
+					<td>boolean</td>
+					<td>false</td>
+					<td>If 'true' the first letter is in uppercase.</td>
+				</tr>
+				<tr>
+					<td>hyphen</td>
+					<td>boolean</td>
+					<td>false</td>
+					<td>If 'true' between the links is a slash.</td>
+				</tr>
+				<tr>
+					<td>hyphenElement</td>
+					<td>string</td>
+					<td></td>
+					<td>If hyphen is 'true' and this one is not empty, this will be shown between the links.</td>
+				</tr>
+				<tr>
+					<td>info</td>
+					<td>boolean</td>
+					<td>true</td>
+					<td>If 'false' there's no information about this file in the console.</td>
+				</tr>
+			</table>
+
+		</p>
+	
+		<hr>
+	
+		<p>
+			<a href="https://codepen.io/tobiasroeder/pen/agBgYO">Try it yourself</a>
+		</p>
+
+		<footer class="site-footer">
+        
+		  <span class="site-footer-owner"><a href="https://github.com/tobiasroeder/Breadcrumb.js">Breadcrumb.js</a> is maintained by <a href="https://github.com/tobiasroeder">Tobias Röder</a>.</span>
+		  
+		</footer>
+		
+	</main>
+
+
+	<script src="../assets/js/prism.js"></script>
+
+</body>
+</html>
