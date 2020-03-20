@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-	
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
-	
+
 	<title>ImageBox by Tobias Röder</title>
-	
+
 	<link rel="stylesheet" href="assets/css/styles.css">
 	<link rel="stylesheet" href="assets/css/pygment_trac.css">
-	
+
 	<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
@@ -19,9 +19,9 @@
 	<meta name="msapplication-TileColor" content="#f0f0f0">
 	<meta name="msapplication-config" content="assets/icons/browserconfig.xml">
 	<meta name="theme-color" content="#f0f0f0">
-	
+
 	<meta name="viewport" content="width=device-width">
-	
+
 	<meta property="og:title" content="ImageBox">
 	<meta property="og:locale" content="en">
 	<meta name="description" content="Display an image in a responsive imagebox without jQuery.">
@@ -29,20 +29,20 @@
 	<link rel="canonical" href="https://tobiasroeder.github.io/imagebox">
 	<meta property="og:url" content="https://tobiasroeder.github.io/imagebox">
 	<meta property="og:site_name" content="ImageBox">
-	
+
 	<!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-	
+
 </head>
 <body>
-	
+
 	<div class="wrapper">
-		
+
 		<header>
-			
+
 			<h1>ImageBox</h1>
-			
+
 			<p>Display an image in a responsive imagebox <u>without</u> jQuery.</p>
 			<p class="view"><a href="https://github.com/tobiasroeder/imagebox">View the Project on GitHub <small>tobiasroeder/imagebox</small></a>
 			</p>
@@ -51,122 +51,192 @@
 				<li><a href="https://github.com/tobiasroeder/imagebox/tarball/master">Download <strong>TAR Ball</strong></a></li>
 				<li><a href="https://github.com/tobiasroeder/imagebox">Fork On <strong>GitHub</strong></a></li>
 			</ul>
-			
+
 		</header>
-		
-		
+
+
 		<section>
-			
+
 			<h1>Documentation</h1>
-			
-			<p>ImageBox latest version <a href="https://github.com/tobiasroeder/imagebox/releases/tag/1.1.0">1.1.0</a></p>
-			
+
+			<p>ImageBox latest version <a id="ib_latest_version">0.0.0</a></p>
+
 			<hr>
-			
+
 			<h3>Include this files:</h3>
-			
-			<p>
-				<pre>&lt;link rel="stylesheet" type="text/css" href="https://tobiasroeder.github.io/imagebox/{version}/imagebox.min.css"&gt;
-&lt;script src="https://tobiasroeder.github.io/imagebox/{version}/imagebox.min.js"&gt;&lt;/script&gt;</pre>
+
+			<div>
+				<pre>&lt;link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/tobiasroeder/imagebox@1.2.0/dist/imagebox.min.css"&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/tobiasroeder/imagebox@1.2.0/dist/imagebox.min.js"&gt;&lt;/script&gt;</pre>
 				<p><b>OR:</b></p>
 				<pre>&lt;script src="https://tobiasroeder.github.io/imagebox/addimagebox.js"&gt;&lt;/script&gt;</pre>
 				<blockquote>
         			<p>(this file will include the newest version from all files which are needed)</p>
         		</blockquote>
-			</p>
-		
+			</div>
+
 			<hr>
-		
+
+			<h3>If  IE support is needed:</h3>
+
+			<div>
+				<pre>&lt;link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/tobiasroeder/imagebox@1.2.0/dist/imagebox.min.css"&gt;
+&lt;script src="https://cdn.jsdelivr.net/gh/tobiasroeder/imagebox@1.2.0/dist/imagebox.ie.min.js"&gt;&lt;/script&gt;</pre>
+				<p><b>OR:</b></p>
+				<pre>&lt;script src="https://tobiasroeder.github.io/imagebox/addimagebox.js" data-addimagebox="ie"&gt;&lt;/script&gt;</pre>
+			</div>
+
+			<hr>
+
 			<h3>How it works:</h3>
-		
+
 			<p>add to the <code>&lt;img&gt;</code> tag the following attributes:</p>
-		
+
 			<p>
 				<ul>
 					<li><code>data-imagebox</code> <em>(single image)</em></li>
 					<li><code>data-imagebox="gallery"</code> <em>(gallery)</em></li>
 					<li><code>data-imagebox-src="img_big.jpg"</code> <em>(voluntary, else it use the src attribute)</em></li>
-					<li><code>data-imagebox-description="Lorem ipsum"</code></li>
+					<li><code>data-imagebox-caption="Lorem ipsum"</code></li>
 				</ul>
 			</p>
-	
-			<h3>Small feature for the description:</h3>
-			
+
+			<h3>Small feature for the caption:</h3>
+
 			<p>
 				<ul>
-					<li><code>data-imagebox-description="{loc} Lorem ipsum"</code> <blockquote>the {loc} will display an small location icon in the beginning</blockquote></li>
+					<li><code>data-imagebox-caption="{loc} Lorem ipsum"</code> <blockquote>the {loc} will display an small location icon in the beginning</blockquote></li>
 				</ul>
 			</p>
-	
+
 			<h3>addImageBox:</h3>
-		
+
 			<p>add to the <code>&lt;script&gt;</code> tag the following attribute:</p>
-			
+
 			<p>
 				<ul>
 					<li><code>data-addimagebox-version="1.0.0"</code> <blockquote>optional otherwise it will use the newest version</blockquote></li>
 				</ul>
 			</p>
-	
+
+            <h3>Options:</h3>
+
+            <pre>// imagebox.js
+imagebox.options({
+    info: true;	// or false
+});
+
+// imagebox.ie.js (only Edge Browser)
+imageboxOptions({
+    info: true;	// or false
+});</pre>
+
 			<hr>
-	
+
 			<h3>Example:</h3>
-	
-			<h4>minimal (single image)</h4>
-	
-			<p><pre>&lt;img src="img_small.jpg" data-imagebox&gt;</pre></p>
 
-			<h4>maximal (single image)</h4>
-	
-			<p><pre>&lt;img src="img_small.jpg" data-imagebox data-imagebox-src="img_big.jpg" data-imagebox-description="Lorem ipsum"&gt;</pre></p>
+			<h4>single image</h4>
 
-			<h4>minimal (gallery)</h4>
-	
-			<p><pre>&lt;img src="img_small.jpg" data-imagebox="gallery"&gt;</pre></p>
+			<p><pre>&lt;img src="img_small.jpg" data-imagebox data-imagebox-src="img_big.jpg" data-imagebox-caption="Lorem ipsum"&gt;</pre></p>
 
-			<h4>maximal (gallery)</h4>
+			<h4>gallery</h4>
 
-			<p><pre>&lt;img src="img_small.jpg" data-imagebox="gallery" data-imagebox-src="img_big.jpg" data-imagebox-description="Lorem ipsum"&gt;</pre></p>
+			<p><pre>&lt;img src="img_small.jpg" data-imagebox="gallery" data-imagebox-src="img_big.jpg" data-imagebox-caption="Lorem ipsum"&gt;</pre></p>
 
 			<h4>addimagebox</h4>
 
-			<p><pre>&lt;script src="https://tobiasroeder.github.io/imagebox/addimagebox.js" data-addimagebox-version="1.0.4"&gt;&lt;/script&gt;</pre></p>
+			<p><pre>&lt;script src="https://tobiasroeder.github.io/imagebox/addimagebox.js" data-addimagebox-version="1.2.0"&gt;&lt;/script&gt;</pre></p>
 
 			<hr id="example">
 
 			<h3>Live example (single image):</h3>
-	
-			<p>
-				<p><img src="assets/img/img01-small.jpg" data-imagebox data-imagebox-src="assets/img/img01-big.jpg" data-imagebox-description="Deer"></p>
-				<p><img src="assets/img/img02-small.jpg" data-imagebox data-imagebox-src="assets/img/img02-big.jpg" data-imagebox-description="{loc} San Francisco"></p>
-			</p>
+
+			<div>
+				<p><img src="assets/img/img01-small.jpg" data-imagebox data-imagebox-src="assets/img/img01-big.jpg" data-imagebox-caption="Deer"></p>
+				<p><img src="assets/img/img02-small.jpg" data-imagebox data-imagebox-src="assets/img/img02-big.jpg" data-imagebox-caption="{loc} San Francisco"></p>
+			</div>
 
 			<h3>Live example (gallery):</h3>
-	
-			<p>
-				<p><img src="assets/img/img03-small.jpg" data-imagebox="gallery" data-imagebox-src="assets/img/img03-big.jpg" data-imagebox-description="San Francisco, United States"></p>
+
+			<div>
+				<p><img src="assets/img/img03-small.jpg" data-imagebox="gallery" data-imagebox-src="assets/img/img03-big.jpg" data-imagebox-caption="San Francisco, United States"></p>
 				<p><img src="assets/img/img04-small.jpg" data-imagebox="gallery" data-imagebox-src="assets/img/img04-big.jpg"></p>
 				<p><img src="assets/img/img05-small.jpg" data-imagebox="gallery" data-imagebox-src="assets/img/img05-big.jpg"></p>
-			</p>
+			</div>
 
 			<hr>
 
+            <h3>Tested in:</h3>
+
+            <table>
+                <tr>
+                    <th>imagebox.js</th>
+                    <th>Safari</th>
+                    <th>Safari iOS</th>
+                    <th>Firefox</th>
+                    <th>Opera</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>13.0.5</td>
+                    <td>13.3.1</td>
+                    <td>74.0</td>
+                    <td>67.0.3575.79</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>imagebox.ie.js</th>
+                    <th>IE11</th>
+                    <th>Edge</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>11.726.16299.0</td>
+                    <td>41.16299.726.0</td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <h3>Difference between imagebox.js and imagebox.ie.js:</h3>
+
+            <p>In imagebox.js is the imagebox an object with init, finder, options, open, close, switch, prev, next and caption functions. The IE11 and Edge Browser doesn't support objects, thats why each function is a single function. In the imagebox.ie.js the imageboxOptions function was removed because it only caused problems.</p>
+			<p>With ImageBox v1.2.0 it's possible to close the imagebox with the 'Esc' button, but in imagebox.js it's checked with <code>event.code == 'Escape'</code> and in imagebox.ie.js with <code>event.key == 'Esc'</code>.</p>
+
+            <hr>
+
 			<h3><a href="https://codepen.io/tobiasroeder/pen/wZeBNL" target="_blank">Try it Yourself</a></h3>
-			
+
 		</section>
-		
-		
+
+
 		<footer>
-			
+
 			<p>This project is maintained by <a href="https://tobias-roeder.de">Tobias Röder</a></p>
 			<p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-			
+
 		</footer>
-	
+
 	</div>
 
 	<script src="https://tobiasroeder.github.io/imagebox/addimagebox.js"></script>
 	<script src="assets/js/scale.fix.js"></script>
+	<script type="text/javascript">
+		var xhr = new XMLHttpRequest();
+
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState == 4 && xhr.status) {
+				var content = JSON.parse(xhr.responseText),
+					ibLatestVersion = document.querySelector('#ib_latest_version');
+
+				ibLatestVersion.href = 'https://github.com/tobiasroeder/imagebox/releases/tag/' + content.versions[0];
+				ibLatestVersion.innerHTML = content.versions[0];
+			}
+		};
+		xhr.open('GET', 'https://data.jsdelivr.com/v1/package/gh/tobiasroeder/imagebox', true);
+		xhr.send();
+	</script>
 
 </body>
 </html>
