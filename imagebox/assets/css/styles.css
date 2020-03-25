@@ -82,6 +82,8 @@ pre {
 table {
   width:100%;
   border-collapse:collapse;
+  overflow:auto;
+  display:block;
 }
 
 th, td {
