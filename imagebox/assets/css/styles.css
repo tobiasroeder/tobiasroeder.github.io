@@ -274,3 +274,24 @@ footer {
     color:#444;
   }
 }
+
+#banner {
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #ddd;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  margin-top: -73px;
+  animation: fadeDown 0.4s forwards;
+  animation-delay: 1s;
+  padding: 20px;
+  font-size: 22px;
+}
+
+@keyframes fadeDown {
+    from { margin-top: -73px; }
+    to { margin-top: 0; }
+}
