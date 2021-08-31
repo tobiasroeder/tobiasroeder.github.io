@@ -72,7 +72,7 @@ main .thumbnail {
 main .thumbnail img {
 	width: 100%;
 	object-fit: contain;
-	margin-bottom: -4px;
+	display: block;
 }
 
 main .content {
