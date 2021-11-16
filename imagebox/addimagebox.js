@@ -1,11 +1,11 @@
 // ======================================================
-// addImageBox v1.1.0
+// addImageBox v1.1.1
 //
 // Creative Commons Attribution 4.0 International License
 // https://tobiasroeder.github.io/imagebox/license
 //
-// https://github.com/tobiasroeder/imagebox
-// Copyright 2020 ImageBox
+// https://github.com/tobiasroeder/ImageBox
+// Copyright 2021 ImageBox
 //
 // ======================================================
 
@@ -35,4 +35,9 @@ window.onload = function() {
 	var jsScript = document.createElement('script');
 	jsScript.setAttribute('src', 'https://cdn.jsdelivr.net/gh/tobiasroeder/imagebox@' + ibVersion + '/dist/imagebox' + ie + '.min.js');
 	document.body.appendChild(jsScript);
+    
+    // initialize the imagebox after the js script was loaded
+    jsScript.onload = function() {
+        imagebox.init();
+    }
 }
